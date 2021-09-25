@@ -2,6 +2,9 @@ import React from 'react';
 import { Card,CardDescription,Container,Grid } from 'semantic-ui-react';
 import style from './planet.css';
 
+//bu sayfalarda prop gondererek normal apidekı dataları yazdırma oldugu ıcın pek uzerınde durmuyorum.
+//semantatıc uı react paketındekı normal card desıgnını kullnarak dataları oraya yazdırdım.
+
  function Planets({data}) {
     return (
         <Container className={style.container}>

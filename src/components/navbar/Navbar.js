@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu,Container } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
+//Başlıklarımı kolay olsun dıye dırekt menu ye ekleyerek yonlendırmesını verdım.
 function Navbar() {
     return (
        <Menu inverted>

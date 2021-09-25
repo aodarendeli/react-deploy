@@ -9,11 +9,15 @@ import { Container } from 'semantic-ui-react';
 
 
 function App() {
+  //Use state ıle degelerımı state de tutuyorum.
 const [people,setPeople]=useState([]);
 const [planets,setPlanets]=useState([]);
 const [species,setSpecies]=useState([]);
 const [loading,setLoading]=useState(true);
 
+//asyn functionlarımı kullanarak fetch edılmesını bekledım
+//Apileri json formatta fetchledım daha sonra dan kullanılabılır hale getirmek ıcın..
+// bu degerlerıde set olarak atadım tuttum.
   useEffect(()=> {
     async function fetchPeople(){
       const res=await fetch('https://swapi.dev/api/people/?format=json');
@@ -35,11 +39,17 @@ const [loading,setLoading]=useState(true);
     fetchSpecies();
     setLoading(false);
   },[])
+
+  //Datalarımın array halıne donusup console ekranında gelıyormu dıye kontrolunu sagladım.
   console.log(people);
   console.log(planets);
   console.log(species);
+
+
+  //Componentlerimi cagırarak yonlendırmelerını yaptım return kısmım.
   return (
     <>
+    
          <Router>
            <Navbar />
             <Container>

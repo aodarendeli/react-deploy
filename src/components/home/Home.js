@@ -1,11 +1,9 @@
 import React from 'react';
-import DeleteButtons from '../deletebutton/deletebutton';
 
  function Home() {
     return (
         <div>
-            <p>Home</p>
-            <DeleteButtons />
+            <p>Welcome Star Wars Api</p>
         </div>
     )
 }
